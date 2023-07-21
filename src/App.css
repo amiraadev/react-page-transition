@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+*{ 
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #0f0f0f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+font-family: "Roslindale Dispaly Condensed";
+background: #c6d5c6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  position: fixed;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo,
+.nav-items {
+  margin: 2em;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+h1 {
+  width:80%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 500;
+  font-size: 10vw;
+  line-height: 1;
+  text-transform: uppercase;
+
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.slide-in {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
+.slide-out {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
 }
